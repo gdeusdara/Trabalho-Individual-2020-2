@@ -21,3 +21,20 @@ jobs:
 
       - name: Docker Push
         run: docker push gdeusdara/gces-trabalho-individual-2020-2-api:api_latest
+
+  deploy-client:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: "client/"
+    steps:
+      - uses: actions/checkout@v2
+      - name: DockerHub
+        run: |
+          docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Docker image
+        run: docker build . --tag gdeusdara/gces-trabalho-individual-2020-2-client:api_latest
+
+      - name: Docker Push
+        run: docker push gdeusdara/gces-trabalho-individual-2020-2-client:api_latest
