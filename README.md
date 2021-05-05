@@ -23,7 +23,16 @@ Assim, será possivel rodar o comando
 
 sem problemas.
 
+A integração contínua foi feita com o Github Actions, portanto, os scripts estão na pasta .github/workflows.
 Além disso, foi feito um pull request exemplo neste repositório, para mostrar os processos sendo ativados adequadamente.
+
+## Prints úteis
+
+<img width="700"  alt="Screen Shot 2021-05-04 at 22 24 05" src="https://user-images.githubusercontent.com/30842015/117087951-73057780-ad27-11eb-9b84-30e07997c0e2.png">
+
+<img width="589" alt="Screen Shot 2021-05-04 at 22 26 58" src="https://user-images.githubusercontent.com/30842015/117088093-d98a9580-ad27-11eb-9094-8e07b55d97cc.png">
+
+<img width="993" alt="Screen Shot 2021-05-04 at 22 28 05" src="https://user-images.githubusercontent.com/30842015/117088168-0ccd2480-ad28-11eb-986a-af75aa8e6d1b.png">
 
 
 ## Introdução do trabalho
