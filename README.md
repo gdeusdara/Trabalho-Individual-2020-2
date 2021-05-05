@@ -6,6 +6,27 @@
 # Trabalho Individual 2020.2
 
 
+## Explicação
+
+Para testar localmente o docker-compose, é preciso criar o arquivo .env com as seguintes configurações: 
+
+    POSTGRES_DB=myproject
+    POSTGRES_USER=myuser
+    POSTGRES_PASSWORD=password
+    POSTGRES_HOST=db
+    POSTGRES_PORT=5432
+
+Assim, será possivel rodar o comando
+
+    docker-compose up --build
+
+sem problemas.
+
+Além disso, foi feito um pull request exemplo neste repositório, para mostrar os processos sendo ativados adequadamente.
+
+
+## Introdução do trabalho
+
 A Gestão de Configuração de Software é parte fundamental no curso de GCES, e dominar os conhecimentos de configuração de ambiente, containerização, virtualização, integração e deploy contínuo tem se tornado cada vez mais necessário para ingressar no mercado de trabalho.
 
 Para exercitar estes conhecimentos, você deverá aplicar os conceitos estudados ao longo da disciplina no produto de software contido neste repositório.
