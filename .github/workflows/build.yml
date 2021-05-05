@@ -40,10 +40,15 @@ jobs:
     - name: api xml for coverage
       run: docker-compose run api coverage xml
 
+    - uses: codecov/codecov-action@v1
+      with:
+        directory: ./api
+        fail_ci_if_error: true
+        verbose: true
 
     - uses: codecov/codecov-action@v1
       with:
-        files: ./client/test/jest/coverage/clover.json, ./api/coverage.xml
+        directory: ./client
         fail_ci_if_error: true
         verbose: true
         
