@@ -48,7 +48,7 @@ jobs:
 
     - uses: codecov/codecov-action@v1
       with:
-        directory: ./client
+        files: ./client/test/jest/coverage/clover.xml
         fail_ci_if_error: true
         verbose: true
         
